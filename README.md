@@ -1,5 +1,5 @@
-# QuickAccessDevSettings
+# Developer settings
 
-Simple app to quickly open developer settings.
+Provides a quick settings tile to open Android developer settings quickly from anywhere.
 
-TODO: Create a quick settings tile, so don't need to hunt for app shortcut either, can open from quick settings in status bar.
+![Screenshot](https://github.com/adityabhaskar/QuickAccessDevSettings/blob/master/screenshot.jpg?raw=true)
