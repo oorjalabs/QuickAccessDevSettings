@@ -1,8 +1,15 @@
-package net.c306.devshortcut;
+package net.c306.devshortcut
 
-import android.service.quicksettings.TileService;
+import android.content.Intent
+import android.provider.Settings
+import android.service.quicksettings.TileService
 
-public class DevSettingsTileService extends TileService {
-    // TODO: 07/10/2020 Create a tile to add to quick settings
-
+class DevSettingsTileService : TileService() {
+    override fun onClick() {
+        super.onClick()
+        // Open developer settings on tile click
+        val openDevSettingsIntent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
+            .apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) }
+        startActivityAndCollapse(openDevSettingsIntent)
+    }
 }
