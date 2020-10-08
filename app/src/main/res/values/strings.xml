@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dev Shortcut</string>
+    <string name="label_developer_settings">Developer settings</string>
 </resources>
