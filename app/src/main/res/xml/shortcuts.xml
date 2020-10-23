@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="dev_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_developer_settings"
+        android:shortcutShortLabel="@string/label_developer_settings"
+        android:shortcutLongLabel="@string/label_developer_settings_long" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.c306.devshortcut"
+            android:targetClass="net.c306.devshortcut.MainActivity" />
+    </shortcut>
+</shortcuts>
