@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dev Shortcut</string>
     <string name="label_developer_settings">Developer settings</string>
+    <string name="label_developer_settings_long">Open developer settings</string>
 </resources>
