@@ -43,7 +43,10 @@ internal fun updateAppWidget(
     // Create an Intent to Open dev settings
     val intent = Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 
-    val pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+    val pendingIntent = PendingIntent.getActivity(
+        context, 0, intent,
+        PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+    )
 
     // Attach on-click listeners to the counter and the icon
     views.setOnClickPendingIntent(R.id.widget_container, pendingIntent)
