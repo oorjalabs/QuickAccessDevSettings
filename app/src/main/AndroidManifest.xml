@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <receiver android:name=".DevShortcutWidget">
+        <receiver
+            android:name=".DevShortcutWidget"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -19,7 +21,9 @@
                 android:resource="@xml/dev_shortcut_widget_info" />
         </receiver>
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -31,6 +35,7 @@
 
         <service
             android:name=".DevSettingsTileService"
+            android:exported="true"
             android:icon="@drawable/ic_developer_settings"
             android:label="@string/label_developer_settings"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
